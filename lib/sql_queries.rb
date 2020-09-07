@@ -15,7 +15,7 @@ end
 
 def selects_oldest_bear_and_returns_name_and_age
   "Write your SQL query here"
-  "SELECT name FROM bear ORDER BY age = DESC LIMIT 1 "
+  "SELECT name , MAX(age) FROM bears WHERE name IS NOT NULL"
 end
 
 def select_youngest_bear_and_returns_name_and_age
